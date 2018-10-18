@@ -44,7 +44,7 @@ def position_callback(data):
     depth = grid.getDepth(data.position.latitude, data.position.longitude)
     #print depth
     global last_depth_time
-    if last_depth_time is None or data.header.stamp - last_depth_time > rospy.Duration(1.0):
+    if last_depth_time is None or data.header.stamp - last_depth_time > rospy.Duration(0.25):
         if depth is not None and depth >= 0:
             depth_publisher.publish(depth)
         last_depth_time = data.header.stamp
