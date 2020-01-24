@@ -95,7 +95,7 @@ def position_callback(data):
                     if z is not None:
                         p = Point32()
                         p.y = -(-swath_half_width+i*dx_re_mbes)
-                        p.z = z
+                        p.z = -z
                         pointCloud.points.append(p)
                 ping_publisher.publish(pointCloud)
                     
