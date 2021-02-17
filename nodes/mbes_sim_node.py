@@ -107,10 +107,10 @@ if __name__ == '__main__':
 
     grid = BathyGrid(sys.argv[1])
 
-    position_subscriber = rospy.Subscriber('/position', GeoPointStamped, position_callback)
-    heading_subscriber = rospy.Subscriber('/heading', NavEulerStamped, heading_callback)
-    depth_publisher = rospy.Publisher('/depth', Float32, queue_size = 5)
-    ping_publisher = rospy.Publisher('/mbes_ping',PointCloud,queue_size=10)
+    position_subscriber = rospy.Subscriber('position', GeoPointStamped, position_callback)
+    heading_subscriber = rospy.Subscriber('heading', NavEulerStamped, heading_callback)
+    depth_publisher = rospy.Publisher('depth', Float32, queue_size = 5)
+    ping_publisher = rospy.Publisher('mbes_ping',PointCloud,queue_size=10)
 
     
     rospy.spin()
