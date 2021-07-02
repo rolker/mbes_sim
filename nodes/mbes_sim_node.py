@@ -1,6 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-import gdal
+from osgeo import gdal
 import sys
 import rospy
 from geographic_msgs.msg import GeoPointStamped
