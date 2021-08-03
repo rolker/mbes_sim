@@ -11,7 +11,7 @@
 
   <buildtool_depend>catkin</buildtool_depend>
   <depend>rospy</depend>
-  <depend>python-gdal</depend>
+  <depend>python3-gdal</depend>
 
   <export>
   </export>
