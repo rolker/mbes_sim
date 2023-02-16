@@ -5,7 +5,7 @@ import sys
 import rospy
 from geographic_msgs.msg import GeoPointStamped
 from std_msgs.msg import Float32
-from marine_msgs.msg import NavEulerStamped
+from project11_msgs.msg import NavEulerStamped
 from sensor_msgs.msg import PointCloud
 from geometry_msgs.msg import Point32
 import math
